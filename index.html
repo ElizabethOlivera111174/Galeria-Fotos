@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS- FUENTES -->
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Open + Sans: ital @ 1 & display = swap "rel =" stylesheet ">
+    
+    <!-- Mis scripts -->
+    <link rel="stylesheet" href="estilos.css">
+    <!--  -->
+
+    <title>Galeria de imagenes</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Galeria de Imagenes</h1>
+                <p>Desarrollo Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar"> 
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo" >Todos</a>
+                <a href="#">Bicicleta</a>
+                <a href="#">Cascadas</a>
+                <a href="#">Lagos</a>
+                <a href="#">Diques</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" data-categoria="cascadas"
+                              data-etiquetas="cascadas, naturaleza,todos" 
+                              data-descripcion="1.-Cascada de Tanti">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/Cascada2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="bicicleta"
+                              data-etiquetas="bicicleta, viajes" 
+                              data-descripcion="2.-Pedaleando al infinito">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/Bici.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="lagos"
+                              data-etiquetas="cascadas, paisajes, naturaleza" 
+                              data-descripcion="1.-Cascada de Tanti">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/7lagos.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="diques"
+                              data-etiquetas="cascadas, diques, naturaleza" 
+                              data-descripcion="1.-Cascada de Tanti">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/DiqueMalPaso.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="cascadas"
+                              data-etiquetas="cascadas, naturaleza" 
+                              data-descripcion="1.-Cascada">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/Cascada2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="cascadas"
+                              data-etiquetas="cascadas, naturaleza" 
+                              data-descripcion="1.-Cascada">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/Cascada.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="bicicleta"
+                              data-etiquetas="bicicleta, viajes" 
+                              data-descripcion="2.-Pedaleando al infinito">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/bici1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="bicicleta"
+                              data-etiquetas="bicicleta, viajes" 
+                              data-descripcion="2.-Pedaleando al infinito">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/bici3.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="bicicleta"
+                              data-etiquetas="bicicleta, viajes" 
+                              data-descripcion="2.-Pedaleando al infinito">
+                <div class="intem-contenido">
+                    <img loading= "lazy" src="img/Bici2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times-circle"></i></button>
+                <img loading= "lazy" src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="" class="wassap">
+                        <i class="fab fa-whatsapp-square" style="font-size: 30px; line-height:60px;"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="" class="likedin">
+                        <i class="fab fa-linkedin" style="font-size: 30px; line-height:60px;"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="" class="github">
+                        <i style="font-size: 30px; line-height:60px;"  class="fab fa-github-square"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="" class="mail">
+                        <i style="font-size: 30px; line-height:60px;" class="fas fa-envelope-square" ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por"></div>
+        </footer>
+    </div>
+
+   
+
+    <!-- Libreria Muri -->
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a19f0fbfbf.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
